@@ -1,0 +1,56 @@
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 30px; 
+
+}
+
+
+    .menu {
+        width: 40%; /* Задаем ширину меню */
+        margin: auto; /* Устанавливаем автоматические отступы для центрирования */
+        text-align: center; /* Выравниваем текст по центру */
+    }
+
+
+
+.menu a:hover {
+    background-color: #98AFC7;
+    color: white;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Расположение линии снизу от меню */
+    left: 0;
+    width: 85%; /* Ширина линии равна ширине контейнера меню */
+    border-bottom: 1px solid black; /* Цвет и толщина линии */
+}
+
+.menu a {
+    text-decoration: none; /* Убираем стандартное подчеркивание у ссылок */
+    padding: 0 10px; /* Отступы вокруг текста ссылок */
+}
+
+   .menu {
+       display: flex;
+   }
+
+   .menu a:not(:last-child)::after {
+       content: "|"; /* Символ-разделитель */
+       margin: 0 10px; /* Расстояние между разделителями */
+   }
+   
